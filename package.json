@@ -1,0 +1,30 @@
+{
+  "name": "kerevizlog",
+  "version": "1.0.0",
+  "description": "Kereviz is a logger package",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sametkamgul/kerevizlog.git"
+  },
+  "keywords": [
+    "kereviz",
+    "log",
+    "logger",
+    "kerevizlog"
+  ],
+  "author": "Samet Kamğul <sametkamgul@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sametkamgul/kerevizlog/issues"
+  },
+  "homepage": "https://github.com/sametkamgul/kerevizlog#readme",
+  "dependencies": {
+    "strftime": "^0.10.1"
+  }
+}
