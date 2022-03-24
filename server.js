@@ -25,7 +25,6 @@ module.exports = function KerevizLog(config) {
     };
 
     this.info = function (...args) {
-        console.log(config);
         return writeToFile(constants.prefix.info, args, this.config);
     };
     this.error = function (...args) {
