@@ -1,15 +1,18 @@
 module.exports = {
-    log: {
-        prefix: {
-            info: '[INFO]',
-            error: '[ERROR]',
-            warning: '[WARNING]',
-        },
+    prefix: {
+        info: '[INFO]',
+        error: '[ERROR]',
+        warning: '[WARNING]',
+    },
+    defaults: {
+        rootFolder: 'Logs',
+        fileExtension: '.log',
+        namePrefix: 'Log',
+        consoleLogAlloed: true,
+        logTimeFormat: '%d.%m.%Y-%H:%M:%S',
+        filetimeFormat: '%d.%m.%Y',
     },
     path: {
-        rootFolderDefault: 'Logs',
-        namePrefix: 'Log',
-        fileExtension: '.log',
         seperator: {
             dash: '-',
         },

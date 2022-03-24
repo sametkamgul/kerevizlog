@@ -2,14 +2,14 @@
  * returns formatted date-time
  * @return {string}
  */
-exports.currentDate = function () {
+exports.currentDate = function (timeformat) {
     var strfTime = require('strftime');
     
-    return strfTime('%d.%m.%Y');
+    return strfTime(timeformat);
 }
 
-exports.currentTime = function () {
+exports.currentTime = function (timeformat) {
     var strfTime = require('strftime');
     
-    return `[${strfTime('%d.%m.%Y-%H:%M:%S')}]`;
+    return `[${strfTime(timeformat)}]`;
 }

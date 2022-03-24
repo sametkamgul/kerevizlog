@@ -1,9 +1,14 @@
-var test = require('../server');
+var KerevizLoggerLocal = require('../server');
 
-test.info("info-1", "info-2");
-test.error("error-1", "error-2");
-test.warn("warn-1", "wan-2");
+var kLogger = new KerevizLoggerLocal({
+    rootFolder : 'Logs',
+    consoleLogAllowed: true,
+});
 
-var testRemote = require('kerevizlog');
+kLogger.info("info-1", "info-2");
+kLogger.error("error-1", "error-2");
+kLogger.warn("warn-1", "wan-2", 1);
 
-testRemote.info('info-remote-1', 'info-remote-2');
+// var testLoggerRemote = require('kerevizlog');
+
+// testLoggerRemote.info('info-log-1', 'info-log-2');
