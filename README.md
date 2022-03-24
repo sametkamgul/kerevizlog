@@ -23,6 +23,14 @@ const kLogger = new kerevizlog();
 }
  ```
 
+## config parameters
+- `rootFolder:` setting root folder relative path
+- `consoleLogAllowed:` setting for enable/disable console output
+- `logTimeFormat:` time format for logging
+- `fileTimeFormat:` time format for filename
+- `fileExtension:` file extension
+- `namePrefix:` name prefix
+
 # usage
 ## info log method
 ```
