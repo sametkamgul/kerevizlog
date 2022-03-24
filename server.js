@@ -6,7 +6,7 @@ module.exports = function KerevizLog(config) {
     this.config = {
         rootFolder: config.hasOwnProperty('rootFolder')
             ? config.rootFolder
-            : constants.defaults.rootFolderDefault,
+            : constants.defaults.rootFolder,
         consoleLogAllowed: config.hasOwnProperty('consoleLogAllowed')
             ? config.consoleLogAllowed
             : true,
