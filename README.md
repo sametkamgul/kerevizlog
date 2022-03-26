@@ -1,19 +1,15 @@
 # kerevizlog
  Kerevizlog is a Node.js logger package. You can create custom console output and/or write to a text-based file.
 
-# Documentation
-
+# Documentation:
 ## importing package
 ```
 var Kerevizlog = require('kerevizlog');
 ```
-## You should init a object
+
+## configuration
 ```
-const kLogger = new kerevizlog();
-```
-## configuration can be done with an object passing to the Kerevizlog object
- ```
-{
+var config = {
     rootFolder: 'Logs',
     consoleLogAllowed: false,
     logTimeFormat: '%d.%m.%Y',
@@ -21,7 +17,13 @@ const kLogger = new kerevizlog();
     fileExtension: '.log',
     namePrefix: 'Log',
 }
- ```
+```
+
+## init an object with or without config
+```
+var kLogger = new kerevizlog(config);
+```
+
 
 ## config parameters
 - `rootFolder:` setting root folder relative path
@@ -31,8 +33,8 @@ const kLogger = new kerevizlog();
 - `fileExtension:` file extension
 - `namePrefix:` name prefix
 
-# usage
-## info log method
+# usage:
+info log method
 ```
 kLogger.info('this is my custom info log output');
 kLogger.info('this', 'is', 'my', 'custom', 'info', 'log', 'output');
@@ -44,9 +46,4 @@ kLogger.error('I am an error message');
 ## warning log method
 ```
 kLogger.warn('it is a warning message');
-```
-
-# final words
-```
-don't hesitate to reach me. you could help to improve code quality && adding new features.
 ```
