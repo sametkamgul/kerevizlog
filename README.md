@@ -7,7 +7,7 @@
 var Kerevizlog = require('kerevizlog');
 ```
 
-## configuration
+## default configuration
 ```
 var config = {
     rootFolder: 'Logs',
@@ -21,7 +21,11 @@ var config = {
 
 ## init an object with or without config
 ```
-var kLogger = new kerevizlog(config);
+var kLogger = new Kerevizlog();
+```
+or
+```
+var kLogger = new Kerevizlog(config);
 ```
 
 
