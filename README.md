@@ -1,3 +1,8 @@
+
+[![NPM Version](http://img.shields.io/npm/v/kerevizlog.svg?style=flat)](https://www.npmjs.org/package/kerevizlog)
+[![NPM Downloads](https://img.shields.io/npm/dm/kerevizlog.svg?style=flat)](https://npmcharts.com/compare/kerevizlog?minimal=true)
+[![Install Size](https://packagephobia.now.sh/badge?p=kerevizlog)](https://packagephobia.now.sh/result?p=kerevizlog)
+
 # kerevizlog
  Kerevizlog is a Node.js logger package. You can create custom console output and/or write to a text-based file.
 
