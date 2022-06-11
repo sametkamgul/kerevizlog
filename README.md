@@ -5,6 +5,9 @@
 
 # kerevizlog
  Kerevizlog is a Node.js logger package. You can create custom console output and/or write to a text-based file.
+ 
+# try it
+ https://www.npmjs.com/package/kerevizlog
 
 # Documentation:
 ## importing package
